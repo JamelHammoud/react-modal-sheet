@@ -20,7 +20,8 @@ export function applyRootStyles(rootId: string) {
     root.style.overflow = 'hidden';
     root.style.willChange = 'transform';
     root.style.transition = 'transform 200ms linear';
-    root.style.transform = `translateY(calc(env(safe-area-inset-top) + ${p / 2}px)) scale(${s})`; // prettier-ignore
+    // root.style.transform = `translateY(calc(env(safe-area-inset-top) + ${p / 2}px)) scale(${s})`; // prettier-ignore
+    root.style.transform = `translateY(calc(env(safe-area-inset-top) + 0px)) scale(${s})`; // prettier-ignore
     root.style.borderTopRightRadius = '10px';
     root.style.borderTopLeftRadius = '10px';
 
